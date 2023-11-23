@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helpper.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" href="ssigupstyleshhet.css" /> -->
+  </head>
+  <body>
+    <div class="_body">
+      <div class="_inner-body">
+        <img id="_logo" src="user-data.png" />
+        <hi class="_tittle">Helperr</hi>
+        <form  id="_form">
+          <input type="text" id="_search" />
+          <button type="submit" id="_search-btn">search</button>
+        </form>
+
+        <div class="_list">
+          <a href="index.html" id="_home"> Home</a>
+          <a href="#" id="_job"> Jobs</a>
+          <a href="#" id="_about-us"> About Us</a>
+          <a href="#" id="_contact-us"> Contact Us</a>
+          <a href="sign-up.html" id="_sign-up"> Sign Up</a>
+        </div>
+      </div>
+      <input type="checkbox" id="_check" />
+      <label for="_check">
+        <i class="bi bi-list" id="_bars"></i>
+        <!-- <i class="bi bi-x" id="_cancel"></i> -->
+      </label>
+      <div class="_side-bar">
+        <!-- <header> <img src="user-data.png" width="20px" height="20px"></header> -->
+        <ul>
+          <li>
+            <a href="index.html"><i class="bi bi-house-door"></i>home</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-sliders"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-envelope"></i>contact Us</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-question-circle"></i>About Us</a>
+          </li>
+          <li>
+            <a href="sign-up.html"><i class="bi bi-person-plus"></i>Sign-Up</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="_sign-inner">
+        <h6 id="_sign-up-heading">Sign In</h6>
+        <form action="/signin" method="post" class="_signup-form">
+          <div>
+            <input type="email" placeholder="Email" id="_email" name="Email" required />
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              id="_password"
+              name="Password"
+              required
+            />
+            <i class="bi bi-key-fill"></i>
+          </div>
+          <div>
+            <button type="submit" id="_sign-btn">
+              <a href="index.html"></a>Sign In
+            </button>
+            <p id="_sign-in-link">
+              Don't have a account? <a href="sign-up.html">Sign-Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var formm = document.getElementById('_form')
+      var searchh = document.getElementById('_search')
+      
+      formm.addEventListener("submit",(event)=>{
+        event.preventDefault()
+        var content = searchh.value
+        // console.log(content)
+        // localStorage.setItem('indata',content)
+        // window.location.href = 'index.html'
+        const urll = `index.html?querys=${encodeURIComponent(content)}`
+        window.location.href = urll
+        searchh.value = ''
+      })
+    </script>
+  </body>
+</html>

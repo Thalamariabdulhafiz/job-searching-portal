@@ -1,0 +1,180 @@
+
+     <div>
+      <div class="_sign-inner">
+        <h6 id="_sign-up-heading">Sign Up</h6>
+        <form action="post" class="_signup-form">
+          <div>
+            <input type="text" placeholder="username" id="_username" required />
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div>
+            <input type="email" placeholder="Email" id="_email" required />
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              id="_password"
+              required
+            />
+            <i class="bi bi-key-fill"></i>
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Re-Password"
+              id="_repassword"
+              required
+            />
+            <i class="bi bi-key-fill"></i>
+          </div>
+          <div>
+            <button type="submit" id="_sign-btn">
+              <a href="index.html"></a>Sign Up
+            </button>
+            <p id="_sign-in-link">
+              already have account? <a href="signin.html">Sign-In</a>
+            </p>
+          </div>
+        </form>  
+       </div>
+      </div>
+
+
+
+
+
+ 
+      <div class="_sign-inner">
+        <h6 id="_sign-up-heading">Sign In</h6>
+        <form action="post" class="_signup-form">
+          <div>
+            <input type="email" placeholder="Email" id="_email" required />
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              id="_password"
+              required
+            />
+            <i class="bi bi-key-fill"></i>
+          </div>
+          <div>
+            <button type="submit" id="_sign-btn">
+              <a href="index.html"></a>Sign In
+            </button>
+            <p id="_sign-in-link">
+              Don't have a account? <a href="sign-up.html">Sign-Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      
+
+
+
+._side-bar {
+  display: unset;
+  position: absolute;
+  right: -100%;
+  background-color: rgb(141, 198, 247);
+  width: 100%;
+  /* text-align: center; */
+  height: 100%;
+  /* border-radius: ; */
+  box-shadow: 10px 10px 8px rgb(164, 199, 228);
+  opacity: 2;
+  transition: all 0.5s step-end ;
+}
+
+._side-bar header {
+  background-color: rgb(141, 198, 247);;
+}
+._side-bar img {
+  margin-top:0%;
+  margin-bottom: 0%;
+  padding-left: 80px;
+  width: 30px;
+  height: 30px;
+  /* border-bottom: 1px black solid; */
+}
+._side-bar ul {
+  margin-top:4%;
+  cursor: pointer;
+}
+._side-bar ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+._side-bar ul li a {
+  display:unset;
+  text-align: center;
+  /* top: 50%; */
+  width: 100%;
+  padding: 2px 6px 2px 38%;
+  font-size: 18px;
+  line-height: 60px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  /* border: 6px 10px 6px 10px; */
+  /* border-bottom: 2px black outset; */
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+._side-bar ul li a:hover {
+  padding: 2px 6px 2px 39%;
+  font-size: 20px;
+}
+._side-bar ul li i {
+  padding: 8px;
+  font-size: 18px;
+}
+
+#_check{
+  position: fixed;
+  right: 0;
+  display: none;
+}
+
+label #_bars,label #_cancel{
+  position: fixed;
+  right: 4%;
+  cursor: pointer;
+  padding: none;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+
+label #_bars{
+  display: block;
+  top: 12px;
+  font-size: 40px;
+  color: rgb(8, 0, 5);
+}
+
+label #_cancel{
+  display: block;
+  z-index: 1111;
+  right:-25%;
+  top: 14px;
+  font-size: 30px;
+  padding: 3px;
+  color: black;
+}
+
+#_check:checked ~ ._side-bar{
+right: 0;
+}
+#_check:checked ~ label #_list{
+right: -20px;
+}
+
+#_check:checked ~ label #_cancel{
+right: 25%;
+}

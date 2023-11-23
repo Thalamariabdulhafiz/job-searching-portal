@@ -1,0 +1,1013 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+._side-bar {
+  display: none;
+}
+
+label #_bars,
+label #_cancel {
+  display: none;
+}
+
+#_check {
+  display: none;
+}
+
+/* ---------------------header-----------------*/
+._inner-body {
+  margin-top: 0px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  background-color: rgb(141, 198, 247);
+}
+
+._tittle {
+  position: absolute;
+  left: 3.5%;
+  font-size: 30px;
+  font-weight: 545;
+  letter-spacing: 1px;
+  font-family: monospace;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px black;
+}
+
+#_logo {
+  position: absolute;
+  margin-left: 0px;
+  left: 10px;
+  justify-content: left;
+  width: 30px;
+  height: 30px;
+}
+
+._list {
+  position: absolute;
+  right: 1.5%;
+}
+
+#_form {
+  position: absolute;
+  left: 21%;
+  width: 45%;
+}
+
+#_search {
+  margin-left: 15px;
+  width: 40%;
+  padding: 5px 10px 4px 10px;
+  border: 1px black groove;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+._search:hover {
+  padding: 7px 11px 6px 11px;
+  border: 1px solid black;
+}
+
+#_search-btn {
+  width: 18%;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding: 2px 8px 2px 8px;
+  border: 1px black groove;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#_search-btn:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 17px;
+  background-color: rgb(180, 176, 245);
+}
+
+._list a {
+  margin-right: 20px;
+  margin-right: 20px;
+  padding: 1px 8px 1px 8px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px black solid;
+  border-radius: 5px;
+  font-weight: 400;
+  color: #000;
+  transition: all 0.5s;
+}
+
+#_home:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 19px;
+  background-color: rgb(180, 176, 245);
+}
+
+#_job:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 19px;
+  background-color: rgb(180, 176, 245);
+}
+
+#_about-us:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 19px;
+  background-color: rgb(180, 176, 245);
+}
+
+#_contact-us:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 19px;
+  background-color: rgb(180, 176, 245);
+}
+
+#_sign-up {
+  transition: all 0.5s;
+}
+
+#_sign-up:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  padding: 3px 9px 3px 9px;
+  font-size: 19px;
+  background-color: rgb(180, 176, 245);
+}
+
+/*------------------------profile image----------------*/
+#_profile1{
+  border: none;
+}
+#_img{
+  height: 20px;
+  width: 20px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#_img:hover{
+  height: 30px;
+  width: 30px;
+  box-shadow: 5px 5px 4px black;
+}
+
+
+
+/*-----------------------jobs description-----------------*/
+
+._main-body {
+  margin: 1%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0px;
+}
+
+._heading_ {
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+._Relevnt-jobs {
+  font-family: monospace;
+  font-size: 25px;
+}
+
+._job-suggestion {
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 3%;
+
+  border: 1px black groove;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+._company-details {
+  margin-top: 0.5%;
+  margin-left: 1%;
+  display: flex;
+  text-decoration: none;
+}
+
+._company-details a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+}
+
+#_icon {
+  font-size: 24px;
+  padding: 2px 3px 2px 3px;
+  border: 1px black solid;
+  border-radius: 150px;
+}
+
+._company-name {
+  font-family: monospace;
+  margin-top: 0.2%;
+  margin-left: 0.5%;
+  font-size: 15px;
+  padding: 2px;
+}
+
+._job-name {
+  font-family: monospace;
+  margin-top: -1%;
+  margin-left: 7%;
+  font-size: 24px;
+  padding: 0px 2px 2px 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+#_job-link {
+  text-decoration: none;
+}
+
+._job-description {
+  margin-top: 0%;
+  margin-left: 7%;
+  font-size: 16px;
+  padding: 0px 2px 2px 2px;
+  text-decoration: none;
+  color: black;
+}
+
+/*-------------sign up form---------------- */
+
+._sign-inner {
+  box-shadow: 10px 10px 8px rgb(203, 222, 244);
+  margin-top: 10%;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding: 30px;
+  background-color: rgb(141, 198, 247);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#_sign-up-heading {
+  text-transform: uppercase;
+  margin: 0% 30% 2% 30%;
+  font-size: 26px;
+  padding: 2px 4px 2px 4px;
+}
+
+._signup-form input {
+  margin-bottom: 3%;
+  width: 60%;
+  padding: 10px 4px 4px 4px;
+  border-radius: 10px;
+  border: 1px black solid;
+  transition: all 0.5s;
+}
+
+._signup-form button {
+  margin-bottom: 1%;
+  width: 35%;
+  font-size: 12px;
+  padding: 8px 16px 6px 16px;
+  border-radius: 10px;
+  border: 1px black solid;
+  background-color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+._signup-form button:hover {
+  box-shadow: 5px 5px 3px rgb(1, 70, 98);
+  font-size: 14px;
+  padding: 9px 18px 6px 18px;
+  background-color: rgb(180, 176, 245);
+}
+
+._signup-form i {
+  margin-top: 0.5%;
+  position: absolute;
+  transform: translateX(-150%);
+  transition: all 0.5s;
+}
+
+._signup-form input:hover {
+  padding: 12px 5px 5px 5px;
+}
+
+#_sign-in-link {
+  margin-top: 2%;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#_sign-in-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+#_sign-in-link a:hover {
+  font-size: 18px;
+}
+
+/* ------------------------------1180px--------------- */
+@media (max-width: 1180px) {
+  ._tittle {
+    position: absolute;
+    left: 4.5%;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  ._list {
+    position: absolute;
+    right: 1%;
+  }
+
+  ._form {
+    position: absolute;
+    left: 20%;
+    width: 45%;
+  }
+
+  ._search {
+    margin-left: 10px;
+    width: 40%;
+    padding: 3px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+  }
+
+  #_search-btn {
+    width: 18%;
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 4px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  #_search-btn:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  ._list a {
+    margin-right: 15px;
+    margin-right: 15px;
+    padding: 1px 8px 1px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px black solid;
+    border-radius: 5px;
+  }
+
+  #_home:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_job:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_about-us:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_contact-us:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_sign-up:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 15px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  /*-------------------signup form------------*/
+  ._sign-inner {
+    position: relative;
+    box-shadow: 10px 10px 8px rgb(203, 222, 244);
+    margin-top: 10%;
+    margin-left: 28%;
+    margin-right: 28%;
+    padding: 40px;
+    background-color: rgb(141, 198, 247);
+    position: relative;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  #_sign-up-heading {
+    text-transform: uppercase;
+    margin: 0% 30% 2% 30%;
+    font-size: 18px;
+  }
+
+  ._signup-form i {
+    margin-top: 0.8%;
+  }
+
+  ._signup-form button {
+    margin-bottom: 1%;
+    width: 40%;
+    font-size: 10px;
+    padding: 8px 16px 6px 16px;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  ._signup-form button:hover {
+    font-size: 12px;
+    padding: 9px 18px 6px 18px;
+    background-color: rgb(180, 176, 245);
+  }
+}
+
+/* -------------------------------700px and --------------------950px */
+@media (min-width: 700px) and (max-width: 950px) {
+  ._tittle {
+    position: absolute;
+    left: 5.6%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  ._list {
+    position: absolute;
+    right: 0.3%;
+  }
+
+  ._form {
+    position: absolute;
+    left: 17%;
+    width: 45%;
+  }
+
+  ._search {
+    margin-left: 10px;
+    width: 40%;
+    padding: 3px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+  }
+
+  #_search-btn {
+    width: 18%;
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 4px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  #_search-btn:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  ._list a {
+    margin-right: 10px;
+    margin-right: 10px;
+    padding: 1px 6px 1px 6px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px black solid;
+    border-radius: 5px;
+  }
+
+  #_home:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_job:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_about-us:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_contact-us:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_sign-up:hover {
+    padding: 3px 9px 3px 9px;
+    font-size: 13px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  /*-----------------sign form ----------------*/
+  ._sign-inner {
+    position: relative;
+    box-shadow: 10px 10px 8px rgb(203, 222, 244);
+    margin-top: 10%;
+    margin-left: 28%;
+    margin-right: 28%;
+    padding: 40px;
+    background-color: rgb(141, 198, 247);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  #_sign-up-heading {
+    text-transform: uppercase;
+    margin: 0% 30% 2% 30%;
+    font-size: 16px;
+  }
+
+  ._signup-form i {
+    margin-top: 1.5%;
+  }
+
+  ._signup-form button {
+    margin-bottom: 1%;
+    width: 40%;
+    font-size: 8px;
+    padding: 8px 16px 6px 16px;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  ._signup-form button:hover {
+    font-size: 9px;
+    padding: 9px 18px 6px 18px;
+    background-color: rgb(180, 176, 245);
+  }
+
+  #_sign-in-link {
+    margin-top: 2%;
+    font-family: monospace;
+    font-size: 10px;
+  }
+
+  #_sign-in-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
+  #_sign-in-link a:hover {
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------480px-----------------------700px */
+
+@media (min-width: 480px) and (max-width: 700px) {
+
+  ._tittle {
+    position: absolute;
+    left: 8.5%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  ._list a {
+    visibility: hidden;
+  }
+
+  ._form {
+    position: absolute;
+    left: 27%;
+    width: 55%;
+  }
+
+  ._search {
+    margin-left: 10px;
+    width: 50%;
+    padding: 3px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+  }
+
+  #_search-btn {
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 4px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  ._sign-inner {
+    box-shadow: 10px 10px 8px rgb(203, 222, 244);
+    margin-top: 10%;
+    margin-left: 21%;
+    margin-right: 21%;
+    padding: 40px;
+    background-color: rgb(141, 198, 247);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  ._signup-form i {
+    margin-top: 2%;
+  }
+
+  ._signup-form input {
+    width: 65%;
+  }
+
+  ._signup-form button {
+    width: 40%;
+  }
+
+  #_sign-in-link {
+    margin-top: 2%;
+    font-family: monospace;
+    font-size: 10px;
+  }
+
+  #_sign-in-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
+  #_sign-in-link a:hover {
+    font-size: 14px;
+  }
+
+  ._side-bar {
+    display: unset;
+    position: absolute;
+    right: -100%;
+    background-color: rgb(141, 198, 247);
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 8px rgb(164, 199, 228);
+    z-index: 3;
+    transition: all 0.5s step-end;
+  }
+
+  ._side-bar header {
+    background-color: rgb(141, 198, 247);
+  }
+
+  ._side-bar img {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 80px;
+    width: 30px;
+    height: 30px;
+  }
+
+  ._side-bar ul {
+    margin-top: 4%;
+    cursor: pointer;
+  }
+
+  ._side-bar ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  ._side-bar ul li a {
+    display: unset;
+    width: 100%;
+    padding: 2px 6px 2px 38%;
+    font-size: 18px;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
+
+  ._side-bar ul li a:hover {
+    padding: 2px 6px 2px 39%;
+    font-size: 20px;
+  }
+
+  ._side-bar ul li i {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  #_check {
+    position: fixed;
+    right: 0;
+    display: none;
+  }
+
+  label #_bars,
+  label #_cancel {
+    position: fixed;
+    right: 4%;
+    cursor: pointer;
+    padding: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  label #_bars {
+    display: block;
+    top: 12px;
+    font-size: 40px;
+    color: rgb(8, 0, 5);
+  }
+
+  label #_cancel {
+    display: block;
+    z-index: 1111;
+    right: -25%;
+    top: 14px;
+    font-size: 30px;
+    padding: 3px;
+    color: black;
+  }
+
+  #_check:checked ~ ._side-bar {
+    right: 0;
+  }
+
+  #_check:checked ~ label #_list {
+    right: -20px;
+  }
+
+  #_check:checked ~ label #_cancel {
+    right: 25%;
+  }
+}
+
+/* -----------------------------100px --------------------480px */
+
+@media (min-width: 100px) and (max-width: 480px) {
+  ._tittle {
+    position: absolute;
+    left: 8.5%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  ._list a {
+    visibility: hidden;
+  }
+
+  ._form {
+    position: absolute;
+    left: 27%;
+    width: 55%;
+  }
+
+  ._search {
+    margin-left: 10px;
+    width: 50%;
+    padding: 3px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+  }
+
+  #_search-btn {
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 4px 8px 2px 8px;
+    border: 1px black groove;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  ._sign-inner {
+    box-shadow: 10px 10px 8px rgb(203, 222, 244);
+    margin-top: 10%;
+    margin-left: 21%;
+    margin-right: 21%;
+    padding: 40px;
+    background-color: rgb(141, 198, 247);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  ._signup-form i {
+    margin-top: 2%;
+  }
+
+  ._signup-form input {
+    width: 80%;
+  }
+
+  ._signup-form button {
+    width: 50%;
+  }
+
+  #_sign-in-link {
+    margin-top: 2%;
+    font-family: monospace;
+    font-size: 10px;
+  }
+
+  #_sign-in-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
+  #_sign-in-link a:hover {
+    font-size: 14px;
+  }
+
+  ._side-bar {
+    display: unset;
+    position: absolute;
+    right: -100%;
+    background-color: rgb(141, 198, 247);
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 8px rgb(164, 199, 228);
+    z-index: 3;
+    transition: all 0.5s step-end;
+  }
+
+  ._side-bar header {
+    background-color: rgb(141, 198, 247);
+  }
+
+  ._side-bar img {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 80px;
+    width: 30px;
+    height: 30px;
+  }
+
+  ._side-bar ul {
+    margin-top: 4%;
+    cursor: pointer;
+  }
+
+  ._side-bar ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  ._side-bar ul li a {
+    display: unset;
+    text-align: center;
+    width: 100%;
+    padding: 2px 6px 2px 38%;
+    font-size: 18px;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
+
+  ._side-bar ul li a:hover {
+    padding: 2px 6px 2px 39%;
+    font-size: 20px;
+  }
+
+  ._side-bar ul li i {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  #_check {
+    position: fixed;
+    right: 0;
+    display: none;
+  }
+
+  label #_bars,
+  label #_cancel {
+    position: fixed;
+    right: 4%;
+    cursor: pointer;
+    padding: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  label #_bars {
+    display: block;
+    top: 12px;
+    font-size: 40px;
+    color: rgb(8, 0, 5);
+  }
+
+  label #_cancel {
+    display: block;
+    z-index: 1111;
+    right: -25%;
+    top: 14px;
+    font-size: 30px;
+    padding: 3px;
+    color: black;
+  }
+
+  #_check:checked ~ ._side-bar {
+    right: 0;
+  }
+
+  #_check:checked ~ label #_list {
+    right: -20px;
+  }
+
+  #_check:checked ~ label #_cancel {
+    right: 25%;
+  }
+}

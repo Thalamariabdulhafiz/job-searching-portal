@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="profilestyle.css" class="css" />
+  </head>
+  <body>
+    <div id="_mainbody">
+      <a href="profile.html"><button type="button" id="_backbtn" onclick="_backpage()">
+        <i class="bi bi-x"></i>
+      </button></a>
+      <div id="_logout">
+        <form action="/logout" method="get">
+        <button id="_logbtn" type="submit">Logout</button>
+        </form>
+      </div>
+      
+      <div id="_profileImg">
+        <a href=""><img id="_picture" src="img.jpg" alt="profile Image" /></a>
+        <button type="button" name="upd0" id="_update-view" onclick="up0()">
+          <i class="bi bi-plus"></i>
+        </button>
+      </div>
+      <div class="_profile">
+        <div class="divouter">
+          <label for="username">Name</label>
+          <div class="divinner">
+            <p id="_username">abdul hafiz</p>
+            <button type="button" name="upd1" id="b1" onclick="up1()">
+              <i id="i1" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="email">Email</label>
+          <div class="divinner">
+            <p id="_email">abdulhafiz0238367368@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="year">Date Of Birth</label>
+          <div class="divinner">
+            <p id="_dataofbirth">xxxx</p>
+            <button type="button" name="upd3" id="b3" onclick="up3()">
+              <i id="i3" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="profession">Profession</label>
+          <div class="divinner">
+            <p id="_profession">none</p>
+            <button type="button" name="upd4" id="b4" onclick="up4()" action="/update/profession">
+              <i id="i4" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="college">College Name</label>
+          <div class="divinner">
+            <p id="_college">none</p>
+            <button type="button" name="upd5" id="b5" onclick="up5()">
+              <i id="i5" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="year">Passed Out Year</label>
+          <div class="divinner">
+            <p id="_graduationyear">xxxx</p>
+            <button type="button" name="upd6" id="b6" onclick="up6()">
+              <i id="i6" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="marks">Marks</label>
+          <div class="divinner">
+            <p id="_marks">none</p>
+            <button type="button" name="upd7" id="b7" onclick="up7()">
+              <i id="i7" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="courses">Courses Done</label>
+          <div class="divinner">
+            <p id="_courses">none</p>
+            <button type="button" name="upd8" id="b8" onclick="up8()">
+              <i id="i8" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="skills">Skills</label>
+          <div class="divinner">
+            <p id="_skills">none</p>
+            <button type="button" name="upd9" id="b9" onclick="up9()">
+              <i id="i9" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="address">Address</label>
+          <div class="divinner">
+            <p id="_address">none</p>
+            <button type="button" name="upd10" id="b10" onclick="up10()">
+              <i id="i10" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="city">City</label>
+          <div class="divinner">
+            <p id="_city">select</p>
+            <button type="button" name="upd11" id="b11" onclick="up11()">
+              <i id="i11" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="state">State</label>
+          <div class="divinner">
+            <p id="_state">select</p>
+            <button type="button" name="upd12" id="b12" onclick="up12()">
+              <i id="i12" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="country">Country</label>
+          <div class="divinner">
+            <p id="_country">select</p>
+            <button type="button" name="upd13" id="b13" onclick="up13()">
+              <i id="i13" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="pincode">Pincode</label>
+          <div class="divinner">
+            <p id="_pincode">none</p>
+            <button type="button" name="upd14" id="b14" onclick="up14()" action="">
+              <i id="i14" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="phone">Phone Number</label>
+          <div class="divinner">
+            <p id="_phone">none</p>
+            <button type="button" name="upd15" id="b15" onclick="up15()">
+              <i id="i15" class="bi bi-pen" ></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="divouter">
+          <label for="website">Website Link</label>
+          <div class="divinner">
+            <p id="_website">none</p>
+            <button type="button" name="upd16" id="b16" onclick="up16()">
+              <i id="i16" class="bi bi-pen"></i>
+            </button>
+          </div>
+        </div>   
+      </div>
+    </div>
+
+    <script>
+
+      
+      var frm = document.createElement("form")
+      frm.setAttribute('method','post')
+      // frm.setAttribute('action','/biopage.html')
+      var divs = document.createElement("div")
+      var hd = document.createElement("h6")
+      hd.innerHTML = "Name"
+      var inp = document.createElement("input")
+      var div1 = document.createElement("div")
+      var btn = document.createElement("button")
+      btn.type = "submit"
+      btn.innerHTML = "update"
+      var cncl = document.createElement("button")
+      cncl.type = "cancel"
+      cncl.innerHTML = "Cancel"
+      cncl.id = "cancel-btn"
+
+      divs.style.display = "block"
+      divs.style.position = "absolute"
+      divs.style.width = "30%"
+      divs.style.boxShadow = "6px 6px 5px rgb(23, 29, 76)"
+      divs.style.textAlign = "center"
+      divs.style.justifyContent = "center"
+      divs.style.padding = "10px"
+      divs.style.left = "-100%"
+      divs.style.top = "100%"
+      divs.style.overflow = "visible"
+      divs.style.margin = "0 30% 0 30%"
+      divs.style.backgroundColor = "white"
+      divs.style.borderRadius = "10px"
+      divs.style.transition = "all .5s ease-in-out"
+
+      div1.style.display ="Block"
+      div1.style.padding ="10px"
+
+      hd.style.fontSize = "20px"
+      hd.style.fontFamily = "Times, serif"
+      hd.style.padding = "10px"
+      hd.style.textTransform = "capitalize"
+
+      inp.style.padding = "4px"
+      inp.style.borderRadius = "6px"
+      inp.style.border = "1px solid black"
+      inp.style.width = "50%"
+      inp.required
+
+      btn.style.position = "relative"
+      btn.style.top = "0%"
+      btn.style.left = "5%"
+      btn.style.padding = " 4px 14px 4px 14px"
+      btn.style.margin = "5% 5% 5% 0%"
+      btn.style.borderRadius = "6px"
+      btn.style.border = "1px solid black"
+      btn.style.background = "rgb(144, 187, 222)"
+      btn.style.cursor = "pointer"
+
+      cncl.style.position = "absolute"
+      cncl.style.top = "65%"
+      cncl.style.right = "36%"
+      cncl.style.padding = " 4px 14px 4px 14px"
+      cncl.style.margin = "5%"
+      cncl.style.borderRadius = "6px"
+      cncl.style.border = "1px solid black"
+      cncl.style.background = "rgb(144, 187, 222)"
+      cncl.style.cursor = "pointer"
+      // hd.style.
+      // hd.style.
+
+      divs.append(hd)
+      div1.append(inp)
+      div1.append(btn)
+      frm.append(div1)
+      divs.append(cncl)
+      divs.append(frm)
+      document.getElementById("_mainbody").append(divs)
+
+      // function _backpage() {
+      //   window.history.back()
+      // }
+
+      function onclickFunction() {
+        divs.style.left = "-100%"
+      }
+
+      document
+        .getElementById("cancel-btn")
+        .addEventListener("click", onclickFunction)
+
+      function up0() {
+        frm.setAttribute('action','/update/Image')
+        hd.innerHTML = "Profile"
+        divs.style.left = "4%"
+        inp.type = "file"
+        inp.accept = "image/*"
+         inp.name = "Image"
+      }
+
+      function up1() {
+        frm.setAttribute('action','/update/Username') 
+        hd.innerHTML = "User Name"
+        divs.style.left = "4%"
+        inp.type = "text"
+         inp.name = "Username"
+      }
+   
+      function up3() {
+        frm.setAttribute('action','/update/dateofbirth')
+        hd.innerHTML = "Date of Birth"
+        divs.style.left = "4%"
+        inp.name = "dateofbirth"
+        inp.type = "date"
+      }
+      function up4() {
+        frm.setAttribute('action','/update/profession') 
+        hd.innerHTML = "Profession"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "profession"
+      }
+      function up5() {
+        frm.setAttribute('action','/update/collegeName') 
+        hd.innerHTML = "College Name"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "collegeName"
+      }
+      function up6() {
+        frm.setAttribute('action','/update/graduationyear') 
+        hd.innerHTML = "Graduation Year"
+        divs.style.left = "4%"
+        inp.type = "date"
+        inp.name = "graduationyear"
+      }
+      function up7() {
+        frm.setAttribute('action','/update/cgpa') 
+        hd.innerHTML = "Marks"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "cgpa"
+        inp.placeholder = "            /10"
+      }
+      function up8() {
+        frm.setAttribute('action','/update/courses') 
+        hd.innerHTML = "Courses"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "courses"
+      }
+      function up9() {
+        frm.setAttribute('action','/update/skills') 
+        hd.innerHTML = "Skills"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "skills"
+      }
+      function up10() {
+        frm.setAttribute('action','/update/address') 
+        hd.innerHTML = "Address"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "address"
+      }
+      function up11() {
+        frm.setAttribute('action','/update/city') 
+        hd.innerHTML = "City"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "city"
+      }
+      function up12() {
+        frm.setAttribute('action','/update/state') 
+        hd.innerHTML = "State"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "state"
+      }
+      function up13() {
+        frm.setAttribute('action','/update/country') 
+        hd.innerHTML = "Country"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "country"
+      }
+      function up14() {
+        frm.setAttribute('action','/update/pincode') 
+        hd.innerHTML = "PinCode"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "pincode"
+      }
+      function up15() {
+        frm.setAttribute('action','/update/phoneNo') 
+        hd.innerHTML = "Phone No"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "phoneNo"
+      }
+      function up16() {
+        frm.setAttribute('action','/update/weblink') 
+        hd.innerHTML = "Website Link"
+        divs.style.left = "4%"
+        inp.type = "text"
+        inp.name = "weblink"
+      }
+
+      // window.location.reload()
+ 
+      fetch("/api/data")
+        .then(res => {
+        if(!res.ok){
+          throw new Error('http error in html page data dint recievd')
+        }
+        return res.json()
+       })
+        .then(data => {
+          console.log("user data at boipage.htmll page :", data)
+          
+          document.getElementById('_picture').src =data.Image
+          document.getElementById('_username').innerHTML = data.Username
+         var email =  data.Email
+         var _email = email.toLowerCase()
+         document.getElementById('_email').innerHTML = _email
+          
+          document.getElementById('_dataofbirth').innerHTML = data.dateofbirth
+          document.getElementById('_profession').innerHTML = data.profession
+          document.getElementById('_college').innerHTML = data.collegeName
+          document.getElementById('_graduationyear').innerHTML = data.graduationyear
+           document.getElementById('_marks').innerHTML = data.cgpa
+          document.getElementById('_courses').innerHTML = data.courses
+          document.getElementById('_skills').innerHTML = data.skills
+          document.getElementById('_address').innerHTML = data.address
+          document.getElementById('_city').innerHTML = data.city
+          document.getElementById('_state').innerHTML = data.state
+           document.getElementById('_country').innerHTML = data.country
+          document.getElementById('_pincode').innerHTML = data.pincode
+          document.getElementById('_phone').innerHTML = data.phoneNo
+          document.getElementById('_website').innerHTML = data.weblink
+          
+
+        })
+        .catch(err => {
+          console.log(err)
+        })
+     
+      
+    </script>
+  </body>
+</html>
